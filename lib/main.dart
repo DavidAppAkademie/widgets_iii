@@ -32,10 +32,17 @@ class MainApp extends StatelessWidget {
             ),
             Column(
               children: [
-                Image.asset(
-                  'assets/images/b.png',
-                  height: 200,
-                  width: 200,
+                Center(
+                  child: Container(
+                    color: Colors.amberAccent,
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Image.asset(
+                        'assets/images/b.png',
+                        width: 100,
+                      ),
+                    ),
+                  ),
                 ),
                 Text(
                   "Hallo Welt",
